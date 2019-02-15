@@ -1113,7 +1113,7 @@ pre .javascript .function {
   right: 30px;
   z-index: 1050;
   padding: 0 6px;
-  width: 24px;
+  width: initial;
   background: #222;
   font-size: 12px;
   opacity: 0.6;
@@ -1658,9 +1658,8 @@ pre .javascript .function {
 }
 .posts-expand .post-eof {
   display: block;
-  margin: 80px auto 60px;
-  width: 8%;
-  height: 1px;
+  width: 0%;
+  height: 0px;
   background: #ccc;
   text-align: center;
 }
@@ -1807,7 +1806,16 @@ pre .javascript .function {
   max-width: 120px;
   height: auto;
   border: 1px solid #eee;
-  opacity: 1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transition: 1.4s all;
+}
+.site-author-image:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -transform: rotate(360deg);
 }
 .site-author-name {
   margin: 0;
@@ -1891,7 +1899,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7029ff;
+  background: #ff59ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2994,9 +3002,26 @@ ul.breadcrumb li+li:last-child {
     text-align: justify;
   }
 }
-* {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
+.post {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
-:active {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
+code {
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+}
+.highlight,
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+.highlight,
+code,
+pre {
+  border: 1px solid #d6d6d6;
 }
